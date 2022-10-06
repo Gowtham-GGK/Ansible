@@ -1,6 +1,11 @@
 ---
 - name: Test Connection
-  hosts: all
+  hosts: localhost
   tasks:
     - name: shell command execution
       shell: hostname
+      register: h
+    - set_fact:
+        h1: "{{ h.stdout }}"
+    - set_fact: 
+        g: "{{ h1 + h }}"
