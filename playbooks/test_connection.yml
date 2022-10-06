@@ -1,0 +1,6 @@
+---
+- name: Test Connection
+  hosts: all
+  tasks:
+    - name: shell command execution
+      shell: hostname
