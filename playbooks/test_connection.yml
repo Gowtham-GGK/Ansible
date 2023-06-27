@@ -8,4 +8,4 @@
     - set_fact:
         h1: "{{ h.stdout }}"
     - set_fact: 
-        g: 'Tis is a test {{ h1 }}'
+        g: 'This is a test {{ h1 }}'
